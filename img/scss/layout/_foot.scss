@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+
+
+.foot{
+  background-color: v.$rosa;
+  padding: 1.5rem;
+    p{
+        color: v.$blanco;
+        margin: 0%; 
+        text-align: center;   
+
+    }
+}

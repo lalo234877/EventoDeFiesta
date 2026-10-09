@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.galeria-imagenes{
+@include m.contenedor;
+       align-items: stretch;  
+       @include m.telefono{
+       @include m.grid(1,1fr,3rem);   
+       }
+       @include m.tablet{
+       @include m.grid(4,1fr,3rem);
+       }
+    }
+
+.modal{
+   position: fixed;
+   inset: 0;
+   background-color:rgba(v.$negro, 0.5) ;
+   display: grid;
+   place-items: center;
+   animation: modeIn ease-in 0.9s;
+   &.fadeout{
+      animation: modeOut ease-in 0.9s;
+   }
+
+   
+   
+
+   img{
+      max-width: 70rem;
+
+   }
+   
+}
+
+.cerrar{
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: v.$blanco;
+      color: v.$negro;
+      font-weight: 700;
+      border: none;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+
+   }
+  
+
+@keyframes modeIn{
+   0%{
+      opacity : 0;
+   }
+   100%{
+      opacity : 1;
+   }
+}
+@keyframes modeOut{
+   0%{
+      opacity : 1;
+   }
+   100%{
+      opacity : 0;
+   }
+}

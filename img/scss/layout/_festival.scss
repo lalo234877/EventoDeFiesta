@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.s-festival{
+    @include m.contenedor;
+
+    @include m.tablet{
+       @include m.grid(2,1fr,3rem);
+    }
+}
+
+.section-contenido{
+    h2{
+      
+      margin-bottom: 0%;
+    }
+    .fecha{
+        color: v.$verde;
+        font-weight: 800;
+    }
+}

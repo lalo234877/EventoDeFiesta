@@ -1,0 +1,20 @@
+{
+  "name": "materiales-festival-de-musica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SAAS Y NPM",
+  "license": "ISC",
+  "author": "ElChinoPa",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "dependencies": {
+    "saas": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.105.0"
+  }
+}
